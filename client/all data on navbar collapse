@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="portfolioApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shamila Mosharraf</title>
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.0.0/bootstrap-social.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<style type="text/css"></style>
+
+</head>
+
+<body>
+	<div class="fixed-content-wrapper">
+		<!-- <header> -->
+<!-- 		<section id="header-container" ng-controller="navCtrl as vm" ng-cloak>
+			<nav role="navigation">
+				<ul> -->
+				
+<!-- 					<li ui-sref-active= "active" ng-class={'inactive' : vm.currentUrl('/') === false}><a ui-sref="home">HOME</a></li> -->
+					<!-- <li ng-class="{active: isActive('/')}"><a ui-sref="home" href="#/home">HOME</a></li> -->
+		<!-- </header> -->
+<!-- 			<header ng-class="{'home-header' : vm.currentUrl('/')}">
+
+				<div class="header-content" ng-if="vm.currentUrl('/')">
+					<h1 class="title-heading">Hi I am Shamila</h1>
+					<h3 class="intro-heading">Full Stack Developer</h3>
+				</div>
+	
+			</header> -->
+		
+		<main ui-view role="main">
+
+<!-- Home page starts -->
+
+		<div id="home">
+		<div class="container-fluid home">
+ 			<section id="header-container">
+
+						<!-- <div class="navbar" role="navigation"> no -->
+			<!-- <nav class="navbar navbar-insverse" role="navigation" ng-controller="navCtrl as vm"> -->
+			<nav class="navbar" ng-controller="navCtrl as vm">
+			<!-- <div class="navbar navbar-inverse" ng-controller="navCtrl as vm"> -->
+				<!-- <div class="navbar-inner"> -->
+				<div class="container-fluid" >
+					<!-- <button class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse"> -->
+				<!-- 	<button class="btn btn-navbar" ng-click="isCollapsed = !isCollapsed"> -->
+					<button class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse" ng-click="isCollapsed = !isCollapsed">
+				<!-- 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> -->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+				<!-- <div class="collapse navbar-collapse" id="navbarCollapse" ng-controller="navCtrl as vm"> -->
+				<!-- <nav role="navigation" > no-->
+				<!-- <div class="nav-collapse" uib-collapse="isCollapsed" id="navbarCollapse"> --> 
+				<!-- <div class="collapse navbar-collapse" id="navbarCollapse" collapse="!isCollapsed">  -->
+				<div id="navbarCollapse" collapse="isCollapsed"> 
+				<!-- <ul class="nav navbar-nav"> -->
+					<ul >
+						<li class="one "><a ui-sref="home" ng-click="scrollTo('home')" href="#home">HOME</a></li>
+						<li class="two"><a ui-sref="about" ng-click="scrollTo('about')" href="#about">ABOUT</a></li>
+						<li class="three"><a ui-sref="portfolio" ng-click="scrollTo('portfolio')" href="#portfolio">PORTFOLIO</a></li>
+						<li class="four"><a ui-sref="skills" ng-click="scrollTo('skills')" href="#skills">SKILLS</a></li>
+						<li class="five "><a ui-sref="contact" ng-click="scrollTo('contact')" href="#contact">CONTACT</a></li>
+				</ul>
+				</div>
+				<!-- </nav> no-->
+			</div> 
+			<!-- </div> -->
+</nav>
+<!-- </div> -->
+</section>
+ 
+
+			
+			<div>
+				<h1 class="title-heading">Shamila Mosharraf</h1>
+				<h3 class="intro-heading">Full   Stack   Developer</h3>
+			</div>
+		</div>
+		</div>
+<!-- Home page ends
+
+<!-- About me page starts -->		
+		<div id="about">
+		<div class="container-fluid about">
+				<div class="row">
+					<div class="col-xs-6" id="about-box">
+						<h2 class="about-intro">About Me</h2>
+						<p class="about-para">I am a web developer, so I know how to create your website to run across devices using the latest technologies available.</p>
+					</div>
+					<div class="col-xs-6">
+						<div >
+							<img class="picture" src="content/img/mypic.png">
+						</div>
+					</div>
+				</div>
+		</div>
+		</div>
+<!-- About me page ends -->	
+
+<!-- Porfolio page starts -->
+		<div id="portfolio">
+				<div class="container-fluid portfolio">
+					 <div class="row">
+						<div class="col-xs-12">
+							<h1 class="portfolio-heading"> Portfolio</h1>
+						</div>
+					</div>
+					
+					<ul>
+						<li>
+							<div class="ch-item ch-img-1">				
+								<div class="ch-info-wrap">
+									<div class="ch-info">
+										<div class="ch-info-front ch-img-1"></div>
+										<div class="ch-info-back">
+											<h3>Bears Type</h3>
+											<p>by Josh Schott <a href="http://drbl.in/ewUW" >View on Dribbble</a></p>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ch-item ch-img-1">				
+								<div class="ch-info-wrap">
+									<div class="ch-info">
+										<div class="ch-info-front ch-img-1"></div>
+										<div class="ch-info-back">
+											<h3>Bears Type</h3>
+											<p>by Josh Schott <a href="http://drbl.in/ewUW">View on Dribbble</a></p>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ch-item ch-img-1">				
+								<div class="ch-info-wrap">
+									<div class="ch-info">
+										<div class="ch-info-front ch-img-1"></div>
+										<div class="ch-info-back">
+											<h3>Bears Type</h3>
+											<p>by Josh Schott <a href="http://drbl.in/ewUW">View on Dribbble</a></p>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ch-item ch-img-1">				
+								<div class="ch-info-wrap">
+									<div class="ch-info">
+										<div class="ch-info-front ch-img-2"></div>
+										<div class="ch-info-back">
+											<h3>Bears Type</h3>
+											<p>by Josh Schott <a href="http://drbl.in/ewUW">View on Dribbble</a></p>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ch-item ch-img-1">				
+								<div class="ch-info-wrap">
+									<div class="ch-info">
+										<div class="ch-info-front ch-img-1"></div>
+										<div class="ch-info-back">
+											<h3>Bears Type</h3>
+											<p>by Josh Schott <a href="http://drbl.in/ewUW">View on Dribbble</a></p>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ch-item ch-img-1">				
+								<div class="ch-info-wrap">
+									<div class="ch-info">
+										<div class="ch-info-front ch-img-1"></div>
+										<div class="ch-info-back">
+											<h3>Bears Type</h3>
+											<p>by Josh Schott <a href="http://drbl.in/ewUW">View on Dribbble</a></p>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</li>
+
+
+					</ul>	
+				</div>
+		</div>
+<!-- Porfolio page ends -->	
+
+<!-- Skills page starts -->		
+		<div id="skills">
+		<div class="container-fluid skills">
+			<div class="row"> 
+				<div class="col-xs-12">
+					<h1 class="skills-heading">My Skills in Technology</h1>
+				</div>
+			</div>
+			<div class="row"> 
+
+				<div class="col-md-3">
+					<div class="skills-box1">
+						<div class="skills-box2 rotate html5">
+						<section class="icon">
+							<!-- <i class="fa fa-html5 fa-5x tech-icon" aria-hidden="true" ng-click="vm.setRepo('html5')"></i> -->
+							<!-- <img src="content/img/html5.png"> -->
+						</section>
+						<section class="language">
+							<h1>HTML5</h1>
+						</section>
+						</div>
+					</div>			
+				</div>
+
+				<div class="col-md-3">
+					<div class="skills-box1">
+						<div class="skills-box2 rotate css3">
+						<section class="icon">
+						<!-- 	<i class="fa fa-css3 fa-5x tech-icon" aria-hidden="true" ng-click="vm.setRepo('css3')"></i> -->
+						<!-- <img src="content/img/css3.png"> -->
+						</section>
+						<section class="language">
+							<h1>CSS3</h1>
+						</section>
+					</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="skills-box1">
+						<div class="skills-box2 rotate bootstrap">
+						<section class="icon">
+						<!-- 	<img src="content/img/bootstrap.png"> -->
+						</section>
+						<section class="language">
+							<h1>Bootstrap</h1>
+						</section>
+					</div>
+					</div>
+
+				</div>
+				<div class="col-md-3">
+					<div class="skills-box1">
+						<div class="skills-box2 rotate apache_server">
+						<section class="icon">
+						<!-- 	<img src="content/img/apache_server.png"> -->
+						</section>
+						<section class="language">
+							<h1>Apache</h1>
+						</section>
+					</div>
+						
+					</div>
+				</div>
+			
+			</div>
+
+
+			<div class="row"> 
+				<div class="col-md-3">
+					<div class="skills-box1">
+						<div class="skills-box2 rotate javascript">
+						<section class="icon">
+							<!-- <img src="content/img/javascript.png"> -->
+						</section>
+						<section class="language">
+							<h1>JavaScript</h1>
+						</section>
+					</div>
+					</div>			
+				</div>
+
+				<div class="col-md-3">
+					<div class="skills-box1">
+						<div class="skills-box2 rotate nodejs">
+						<section class="icon">
+							<!-- <img src="content/img/nodejs.png"> -->
+						</section>
+						<section class="language">
+							<h1>NodeJS</h1>
+						</section>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="skills-box1">
+						<div class="skills-box2 rotate angularjs">
+						<section class="icon">
+						<!-- 	<img src="content/img/angularjs.png"> -->
+						</section>
+						<section class="language">
+							<h1>AngularJS</h1>
+						</section>
+						</div>
+				</div>
+
+				</div>
+				<div class="col-md-3">
+					<div class="skills-box1">
+						<div class="skills-box2 rotate mongodb">
+						<section class="icon">
+						<!-- 	<img src="content/img/mongodb.png"> -->
+						</section>
+						<section class="language">
+							<h1>MongoDB</h1>
+						</section>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row"> 
+				<div class="col-md-3">
+					<div class="skills-box1">
+						<div class="skills-box2 rotate php">
+						<section class="icon">
+							<!-- <img src="content/img/php.png"> -->
+						</section>
+						<section class="language">
+							<h1>PHP</h1>
+						</section>
+						</div>
+					</div>			
+				</div>
+
+				<div class="col-md-3">
+					<div class="skills-box1">
+						<div class="skills-box2 rotate mysql">
+						<section class="icon">
+							<!-- <img src="content/img/mysql.png"> -->
+						</section>
+						<section class="language">
+							<h1>MySQL</h1>
+						</section>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="skills-box1">
+						<div class="skills-box2 rotate python">
+						<section class="icon">
+							<!-- <img src="content/img/python.png"> -->
+						</section>
+						<section class="language">
+							<h1>Python</h1>
+						</section>
+					</div>	
+				</div>
+
+				</div>
+				<div class="col-md-3">
+					<div class="skills-box1">
+						<div class="skills-box2 rotate jquery">
+						<section class="icon">
+							<!-- <img src="content/img/jquery.png"> -->
+						</section>
+						<section class="language">
+							<h1>jQuery</h1>
+						</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>		
+<!-- Skills page ends -->
+
+<!-- Contact page starts -->
+		<div id="contact">
+		<div class="container-fluid contact" data-ng-controller="contactCtrl as vm">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="contact-box">
+							<section class="info-box">
+								<h3>Contact Me</h3>
+							</section>
+							<section class="info-box">
+								<h2 id="info-words">I am a full-stack developer who lives in Santa Clara. Who 
+									
+			If you are interested in working with me, you need information, you want a free quotation or have an idea for a project, do not hesitate to drop me a line!</h3>
+							</section>
+							<section class="info-box">
+								<h2>Shamila Mosharraf</h2>
+								<h2><span>Email: </span>shamila.m09@gmail.com</h3>
+							</section>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<section class="contact-form">
+							
+							<div>
+							 <form name="contact-form" data-ng-submit="vm.sendMail()">
+							    <input type="text" id="name" data-ng-model="vm.contactName" placeholder="Full Name" /><hr>
+							    <input type="email" id="email" data-ng-model="vm.contactEmail" placeholder="Your Email Address" /><hr>
+							    <textarea id="message" data-ng-model="vm.contactMsg" placeholder="Message"></textarea>
+							    <button id="send_mail" type="submit" class="btn btn-info" value="Send Message" ng-class="contact-form.$dirty && contact-form.$valid"/>SEND MESSAGE</button>
+
+							    <span id="msg"></span>
+							  </form>
+							
+							</div>
+						</section>
+					</div>
+					
+				</div>
+		</div>	
+		</div>
+<!-- Contact page ends -->
+
+		</main>
+		<footer>
+			<div class="row">
+				<ul>
+					<li><a href="https://www.linkedin.com/in/shamilam/" title="linkedin" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="https://github.com/Shaaamila" title="github" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="mailto:shamila.m09@gmail.com" title="mail" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+
+					<li><a href="https://www.facebook.com/shamila.mosharraf" title="facebook" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+					<li class="resume_link"><a href="/content/resume/resume.pdf" title="resume" target="_blank"><img src="/content/img/resume_button.png"></a></li>
+					
+				</ul>
+			</div>
+			<div class="row">
+				<ul>
+					<li><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2017 Shamila Mosharraf</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+<!--   needed for smooth scrolling -->
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
+<script src="smooth_scroll.js"></script>
+
+<!--   needed for smooth scrolling -->
+<script src="all.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
