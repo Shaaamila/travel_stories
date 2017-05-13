@@ -23,424 +23,207 @@
 
 <body>
 	<div class="fixed-content-wrapper">
-		<!-- <header> -->
-<!-- 		<section id="header-container" ng-controller="navCtrl as vm" ng-cloak>
-			<nav role="navigation">
-				<ul> -->
-				
-<!-- 					<li ui-sref-active= "active" ng-class={'inactive' : vm.currentUrl('/') === false}><a ui-sref="home">HOME</a></li> -->
-					<!-- <li ng-class="{active: isActive('/')}"><a ui-sref="home" href="#/home">HOME</a></li> -->
-		<!-- </header> -->
-<!-- 			<header ng-class="{'home-header' : vm.currentUrl('/')}">
-
-				<div class="header-content" ng-if="vm.currentUrl('/')">
-					<h1 class="title-heading">Hi I am Shamila</h1>
-					<h3 class="intro-heading">Full Stack Developer</h3>
-				</div>
-	
-			</header> -->
-		<button class="goToTop"><i class="icon-chevron-up"></i></button>
-
+		<!-- <ui-view></ui-view> -->
 		<main ui-view role="main">
+	<!-- 	<main> -->
+<!-- <ui-view></ui-view> -->
+		<div id="home" >
+		<!-- 		<div class="typing appear"><p>How much I love to travel that my thirst goes beyond the love of roots and my own soft pillows...</p></div> -->
+			<div id="page">
+			<div class="container-fluid home" ng-controller="homeCtrl as vm">
 
-<!-- Home page starts -->
+				<section id="header-container">
+					<nav id="drawer" ng-controller="navCtrl as vm">
 
-		<div id="home">
-		<div class="container-fluid home">
+					<!-- <button class="btn btn-default" ng-click="isCollapsed = !isCollapsed"> -->
+						<!-- <span class="glyphicon glyphicon-align-center" aria-hidden="true"></span> -->
 
- 			<section id="header-container">
 
-				<nav ng-controller="navCtrl as vm">
+						<button class="menu"><i class="fa fa-bars fa-3x" aria-hidden="true"></i>
 
-					<!-- <button class="navbar-toggle" data-toggle="collapse" ng-init="isCollapsed === true" ng-click="isCollapsed = !isCollapsed"> -->
-					<button class="navbar-toggle" data-toggle="collapse" ng-click="isCollapsed = !isCollapsed">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<div class="collapse navbar-collapse" collapse="isCollapsed"> 
-						<ul>
-							<li class="one "><a ui-sref="home" ng-click="scrollTo('home')" href="#home">HOME</a></li>
-							<li class="two"><a ui-sref="about" ng-click="scrollTo('about')" href="#about">ABOUT</a></li>
-							<li class="three"><a ui-sref="portfolio" ng-click="scrollTo('portfolio')" href="#portfolio">PORTFOLIO</a></li>
-							<li class="four"><a ui-sref="skills" ng-click="scrollTo('skills')" href="#skills">SKILLS</a></li>
-							<li class="five "><a ui-sref="contact" ng-click="scrollTo('contact')" href="#contact">CONTACT</a></li>
-						</ul>
-					</div>
-				<!-- </div> --> 
-				</nav>
+						</button>
 
-			</section>
-			
-			<div>
-				<h1 class="title-heading">Shamila Mosharraf</h1>
-				<h3 class="intro-heading">Full   Stack   Developer</h3>
+					
+
+  
+
+
+					</nav>
+				</section>
+
+
+<!--         <ul class="cb-slideshow">
+            <li><span>Image 01</span><div><h3>re·lax·a·tion</h3></div></li>
+            <li><span>Image 02</span><div><h3>qui·e·tude</h3></div></li>
+            <li><span>Image 03</span><div><h3>bal·ance</h3></div></li>
+            <li><span>Image 04</span><div><h3>e·qua·nim·i·ty</h3></div></li>
+            <li><span>Image 05</span><div><h3>com·po·sure</h3></div></li>
+            <li><span>Image 06</span><div><h3>se·ren·i·ty</h3></div></li>
+        </ul> -->
+<!-- 			        <ul class="cb-slideshow">
+			            <li><span>Image 01</span><div><h3>Welcome to my jouney!</h3>
+			            	<h3>~Salman Kabir</h3></div></li>
+			            <li><span>Image 02</span><div><p class="typing">How much I love to travel that my thirst goes beyond the love of roots and my own soft pillows...</p></div></li>
+			            <li><span>Image 03</span><div><h3>bal·ance</h3></div></li>
+			            <li><span>Image 04</span><div><h3>e·qua·nim·i·ty</h3></div></li>
+			            <li><span>Image 05</span><div><h3>com·po·sure</h3></div></li>
+			            <li><span>Image 06</span><div><h3>se·ren·i·ty</h3></div></li>
+			        </ul>
+				</div> -->
+				<ul class="cb-slideshow">
+			            <li><span>Image 01</span><div><h3>Welcome to my jouney!</h3>
+			            	<h3>~Salman Kabir</h3></div></li>
+			            <li><span>Image 02</span><div class="typing"><p>How much I love to travel that my thirst goes beyond the love of roots and my own soft pillows...</p></div></li>
+			            <li><span>Image 03</span></li>
+			            <li><span>Image 04</span></li>
+			            <li><span>Image 05</span></li>
+			            <li><span>Image 06</span></li>
+			            		<div class="typing appear"><p>How much I love to travel that my thirst goes beyond the love of roots and my own soft pillows...</p></div>
+			        </ul>
+		
+				</div>
+
+
+
+<!-- 				<div>
+					<h1 class="title-heading">Shamila Mosharraf</h1>
+					<h3 class="intro-heading">Full   Stack   Developer</h3>
+				</div> -->
 			</div>
-		</div>  <!-- div id="home" -->
-</div>
-<!-- Home page ends -->
+			</div>
+		</div> <!-- id=home -->
 
 <!-- About me page starts -->		
 		<div id="about">
 		<div class="container-fluid about">
 				<div class="row">
-					<div class="col-xs-6" id="about-box">
-						<h2 class="about-intro">About Me</h2>
-						<p class="about-para">I am a web developer, so I know how to create your website to run across devices using the latest technologies available.</p>
+					<div class="col-xs-12" id="about-box">
+						<!-- <h2 class="about-intro">Stories I Live</h2> -->
+						<h2 class="about-intro">My Story</h2>
+						<a ui-sref="album">Album</a>
+						<p class="about-para">For me, world history is an adventure and also a version of time travel that opens a window to the past.  Hence I explore the world to see the memories and stories it holds.  My travel & photography has become a part of my journey of life and I’m pleased to share that vision with you.  I love what I do, as well as the people and places I photograph.  Each person and every place has its own story.   So I guess it's true when they say, "Travelling.  It leaves you speechless, then turns you into a storyteller !"</p><br>
+						<!-- <p>Enjoy!</p> -->
 					</div>
-					<div class="col-xs-6">
+<!-- 					<div class="col-xs-6">
 						<div >
 							<img class="picture" src="content/img/mypic.png">
 						</div>
-					</div>
+					</div> -->
 				</div>
 		</div>
-		</div>
-<!-- About me page ends -->	
+		</div> <!-- about -->
+<!-- About me page ends -->
 
-<!-- Porfolio page starts -->
-		<div id="portfolio">
-				<div class="container-fluid portfolio" ng-scrollbar>
+<!-- Albums page starts -->
+		<div id="albums">
+				<div class="container-fluid albums" ng-scrollbar>
 					 <div class="row">
 						<div class="col-xs-12">
-							<h1 class="portfolio-heading"> Portfolio</h1>
+							<h1 class="albums-heading"> Albums</h1>
 						</div>
 					</div>
+					<!-- SADIE -->
+
+				<div class="grid">
+					<ul>
+					<li><figure class="effect-sadie">
+						<img src="content/img/homey.jpg" alt="img02"/>
+						<figcaption>
+							<h2>Holy <span>Sadie</span></h2>
+							<p>Sadie never took her eyes off me. <br>She had a dark soul. <a ui-sref="album" target="_blank">View Album</a></p>
+							<!-- <a ui-sref="home" ng-click="scrollTo('home')" href="#home">HOME</a> -->
+							<!-- <a href="#">View Album</a> -->
+						</figcaption>			
+					</figure>
+					</li>
+
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/homey.jpg" alt="img14"/>
+						<figcaption>
+							<h2>Holy <span>Sadie</span></h2>
+							<p>Sadie never took her eyes off me. <br>She had a dark soul. <a ui-sref="album">View Album</a></p>
+							<!-- <a href="#">View more</a> -->
+						</figcaption>			
+					</figure>
+					</li>
+
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/homey.jpg" alt="img14"/>
+						<figcaption>
+							<h2>Holy <span>Sadie</span></h2>
+							<p>Sadie never took her eyes off me. <br>She had a dark soul. <a href="#">View Album</a></p>
+							<!-- <a href="#">View more</a> -->
+						</figcaption>			
+					</figure>
+					</li>
+
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/homey.jpg" alt="img14"/>
+						<figcaption>
+							<h2>Holy <span>Sadie</span></h2>
+							<p>Sadie never took her eyes off me. <br>She had a dark soul. <a href="#">View Album</a></p>
+							<!-- <a href="#">View more</a> -->
+						</figcaption>			
+					</figure>
+					</li>
+
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/homey.jpg" alt="img14"/>
+						<figcaption>
+							<h2>Holy <span>Sadie</span></h2>
+							<p>Sadie never took her eyes off me. <br>She had a dark soul. <a href="#">View Album</a></p>
+							<!-- <a href="#">View more</a> -->
+						</figcaption>			
+					</figure>
+					</li>
+
+					<li>
+					<figure class="effect-sadie">
+						<img src="content/img/homey.jpg" alt="img14"/>
+						<figcaption>
+							<h2>Holy <span>Sadie</span></h2>
+							<p>Sadie never took her eyes off me. <br>She had a dark soul. <a href="#">View Album</a></p>
+							<!-- <a href="#">View more</a> -->
+						</figcaption>			
+					</figure>
+					</li>
+					</ul>
+				</div>
+
+				<!-- SADIE -->
 					
-					<ul class="portfolio-list">
-						<li>
-							<div class="ch-item ch-img-1">				
-								<div class="ch-info-wrap">
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-1"></div>
-										<div class="ch-info-back">
-											<h3>Bears Type</h3>
-											<p>by Josh Schott <a href="http://drbl.in/ewUW" >View on Dribbble</a></p>
-										</div>	
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="ch-item ch-img-1">				
-								<div class="ch-info-wrap">
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-1"></div>
-										<div class="ch-info-back">
-											<h3>Bears Type</h3>
-											<p>by Josh Schott <a href="http://drbl.in/ewUW">View on Dribbble</a></p>
-										</div>	
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="ch-item ch-img-1">				
-								<div class="ch-info-wrap">
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-1"></div>
-										<div class="ch-info-back">
-											<h3>Bears Type</h3>
-											<p>by Josh Schott <a href="http://drbl.in/ewUW">View on Dribbble</a></p>
-										</div>	
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="ch-item ch-img-1">				
-								<div class="ch-info-wrap">
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-2"></div>
-										<div class="ch-info-back">
-											<h3>Bears Type</h3>
-											<p>by Josh Schott <a href="http://drbl.in/ewUW">View on Dribbble</a></p>
-										</div>	
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="ch-item ch-img-1">				
-								<div class="ch-info-wrap">
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-1"></div>
-										<div class="ch-info-back">
-											<h3>Bears Type</h3>
-											<p>by Josh Schott <a href="http://drbl.in/ewUW">View on Dribbble</a></p>
-										</div>	
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="ch-item ch-img-1">				
-								<div class="ch-info-wrap">
-									<div class="ch-info">
-										<div class="ch-info-front ch-img-1"></div>
-										<div class="ch-info-back">
-											<h3>Bears Type</h3>
-											<p>by Josh Schott <a href="http://drbl.in/ewUW">View on Dribbble</a></p>
-										</div>	
-									</div>
-								</div>
-							</div>
-						</li>
 
 
-					</ul>	
-				</div>
-		</div>  <!-- id="portfolio" -->
-
-<!-- Porfolio page ends -->	
 
 
-<!-- Skills page starts -->		
-		<div id="skills">
-		<div class="container-fluid skills">
-			<div class="row"> 
-				<div class="col-xs-12">
-					<h1 class="skills-heading">My Skills in Technology</h1>
-				</div>
-			</div>
-			<div class="row"> 
-
-				<div class="col-md-3">
-					<div class="skills-box1">
-						<div class="skills-box2 rotate html5">
-						<section class="icon">
-							<!-- <i class="fa fa-html5 fa-5x tech-icon" aria-hidden="true" ng-click="vm.setRepo('html5')"></i> -->
-							<!-- <img src="content/img/html5.png"> -->
-						</section>
-						<section class="language">
-							<h1>HTML5</h1>
-						</section>
-						</div>
-					</div>			
-				</div>
-
-				<div class="col-md-3">
-					<div class="skills-box1">
-						<div class="skills-box2 rotate css3">
-						<section class="icon">
-						<!-- 	<i class="fa fa-css3 fa-5x tech-icon" aria-hidden="true" ng-click="vm.setRepo('css3')"></i> -->
-						<!-- <img src="content/img/css3.png"> -->
-						</section>
-						<section class="language">
-							<h1>CSS3</h1>
-						</section>
-					</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="skills-box1">
-						<div class="skills-box2 rotate bootstrap">
-						<section class="icon">
-						<!-- 	<img src="content/img/bootstrap.png"> -->
-						</section>
-						<section class="language">
-							<h1>Bootstrap</h1>
-						</section>
-					</div>
-					</div>
-
-				</div>
-				<div class="col-md-3">
-					<div class="skills-box1">
-						<div class="skills-box2 rotate apache_server">
-						<section class="icon">
-						<!-- 	<img src="content/img/apache_server.png"> -->
-						</section>
-						<section class="language">
-							<h1>Apache</h1>
-						</section>
-					</div>
-						
-					</div>
-				</div>
-			
-			</div>
-
-
-			<div class="row"> 
-				<div class="col-md-3">
-					<div class="skills-box1">
-						<div class="skills-box2 rotate javascript">
-						<section class="icon">
-							<!-- <img src="content/img/javascript.png"> -->
-						</section>
-						<section class="language">
-							<h1>JavaScript</h1>
-						</section>
-					</div>
-					</div>			
-				</div>
-
-				<div class="col-md-3">
-					<div class="skills-box1">
-						<div class="skills-box2 rotate nodejs">
-						<section class="icon">
-							<!-- <img src="content/img/nodejs.png"> -->
-						</section>
-						<section class="language">
-							<h1>NodeJS</h1>
-						</section>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="skills-box1">
-						<div class="skills-box2 rotate angularjs">
-						<section class="icon">
-						<!-- 	<img src="content/img/angularjs.png"> -->
-						</section>
-						<section class="language">
-							<h1>AngularJS</h1>
-						</section>
-						</div>
-				</div>
-
-				</div>
-				<div class="col-md-3">
-					<div class="skills-box1">
-						<div class="skills-box2 rotate mongodb">
-						<section class="icon">
-						<!-- 	<img src="content/img/mongodb.png"> -->
-						</section>
-						<section class="language">
-							<h1>MongoDB</h1>
-						</section>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row"> 
-				<div class="col-md-3">
-					<div class="skills-box1">
-						<div class="skills-box2 rotate php">
-						<section class="icon">
-							<!-- <img src="content/img/php.png"> -->
-						</section>
-						<section class="language">
-							<h1>PHP</h1>
-						</section>
-						</div>
-					</div>			
-				</div>
-
-				<div class="col-md-3">
-					<div class="skills-box1">
-						<div class="skills-box2 rotate mysql">
-						<section class="icon">
-							<!-- <img src="content/img/mysql.png"> -->
-						</section>
-						<section class="language">
-							<h1>MySQL</h1>
-						</section>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="skills-box1">
-						<div class="skills-box2 rotate python">
-						<section class="icon">
-							<!-- <img src="content/img/python.png"> -->
-						</section>
-						<section class="language">
-							<h1>Python</h1>
-						</section>
-					</div>	
-				</div>
-
-				</div>
-				<div class="col-md-3">
-					<div class="skills-box1">
-						<div class="skills-box2 rotate jquery">
-						<section class="icon">
-							<!-- <img src="content/img/jquery.png"> -->
-						</section>
-						<section class="language">
-							<h1>jQuery</h1>
-						</section>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>		
-<!-- Skills page ends -->
-
-<!-- Contact page starts -->
-		<div id="contact">
-		<div class="container-fluid contact" data-ng-controller="contactCtrl as vm">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="contact-box">
-							<section class="info-box">
-								<h3>Contact Me</h3>
-							</section>
-							<section class="info-box">
-								<h2 id="info-words">I am a full-stack developer who lives in Santa Clara. Who 
-									
-			If you are interested in working with me, you need information, you want a free quotation or have an idea for a project, do not hesitate to drop me a line!</h3>
-							</section>
-							<section class="info-box">
-								<h2>Shamila Mosharraf</h2>
-								<h2><span>Email: </span>shamila.m09@gmail.com</h3>
-							</section>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<section class="contact-form">
-							
-							<div>
-							 <form name="contact-form" data-ng-submit="vm.sendMail()">
-							    <input type="text" id="name" data-ng-model="vm.contactName" placeholder="Full Name" /><hr>
-							    <input type="email" id="email" data-ng-model="vm.contactEmail" placeholder="Your Email Address" /><hr>
-							    <textarea id="message" data-ng-model="vm.contactMsg" placeholder="Message"></textarea>
-							    <button class="contact-button" type="submit" value="Send Message" ng-class="contact-form.$dirty && contact-form.$valid"/>SEND</button>
-
-							    <span id="msg"></span>
-							  </form>
-							
-							</div>
-						</section>
-					</div>
 					
 				</div>
-		</div>	
-		</div>
-<!-- Contact page ends -->
+		</div>  <!-- id="album" -->
 
-		</main>
-		<!-- <footer class="navbar-fixed-bottom"> -->
+<!-- Albums page ends -->	
+
+
+
+
+
+
+
+		</main>	
 		<footer>
 			<div class="row">
-				<ul>
-					<li><a href="https://www.linkedin.com/in/shamilam/" title="linkedin" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-					<li><a href="https://github.com/Shaaamila" title="github" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-					<li><a href="mailto:shamila.m09@gmail.com" title="mail" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-
-					<li><a href="https://www.facebook.com/shamila.mosharraf" title="facebook" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-					<!-- <li class="resume_link"><a href="/content/resume/resume.pdf" title="resume" target="_blank"><img src="/content/img/resume_button.png"></a></li> -->
-					<li class="resume_link"><a href="/content/resume/resume.pdf" title="resume" download><img src="/content/img/resume_button.png"></a></li>
-				<!-- 	<a href="/images/myw3schoolsimage.jpg" download> -->
-					
-				</ul>
+				<div class="col-xs-12"> 
+				<p>
+				<i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2017 Travel Stories</p>
 			</div>
-			<div class="row">
-				<ul>
-					<li><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2017 Shamila Mosharraf</li>
-				</ul>
 			</div>
 		</footer>
 	</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.min.js"></script>
@@ -456,22 +239,15 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
 <script src="smooth_scroll.js"></script>
 
-<!--   needed for smooth scrolling -->
+	<!-- for animation start -->
+<!-- 	    <script src="libs/jquery.min.js"></script>
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/TweenMax.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script>
+    <script src="libs/ui-bootstrap-tpls-0.11.0.min.js"></script>
+    <script src="http://code.createjs.com/preloadjs-0.4.1.min.js"></script> -->
 
-<!-- more -->
-<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="smoothscroll.js"></script> -->
-<!-- <script src="dist/ng-scrollbar.min.js"></script>
-<link rel="stylesheet" href="dist/ng-scrollbar.min.css" > -->
-<!-- more -->
-<script src="all.js"></script>
-
+    	<!-- for animation ends -->
+     <script src="all.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
