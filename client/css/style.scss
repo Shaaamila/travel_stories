@@ -157,7 +157,7 @@ button {
 }
 .cb-slideshow:after {
     content: '';
-    background: transparent url('/content/img/homey.jpg') repeat top left;
+    background: transparent url('/content/img/florence/florence.jpg') repeat top left;
 
 }
 .cb-slideshow {
@@ -211,7 +211,7 @@ button {
 
 
 
-.cb-slideshow li:nth-child(1) span { background-image: url('/content/img/homey.jpg') }
+.cb-slideshow li:nth-child(1) span { background-image: url('/content/img/florence/florence.jpg') }
 .cb-slideshow li:nth-child(2) span {
     background-image: url('/content/img/homey.jpg');
     -webkit-animation-delay: 6s;
@@ -562,9 +562,9 @@ button {
 
 
 .container-fluid.albums {
-	height: 100vh;
+	/*height: 100vh;*/
+    height: auto;
 	padding: 5% 8%;
-	/*color: white;*/
 	background-color: #3d4a69;
 	background-size: 100% 100%;
 	text-align: center;
