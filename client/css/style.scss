@@ -52,6 +52,15 @@ html, body {
 	overflow: auto;
 	}
 
+
+
+.container-fluid.home {
+    height: 100vh;
+    padding: 5%;
+    color: black;
+    background-size: 100% 100%;
+    text-align: center;
+}
 	nav {
 	/*background-color:pink;*/
 	width: 100%;
@@ -67,16 +76,60 @@ html, body {
 /*NAVBAR cool*/
 
 
-
+/*input {
+  display: none;
+}
+label ul {
+  border: 1px solid #cecfd5;
+  border-radius: 6px;
+}
+label {
+  color: #0087cc;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px 9px;
+  transition: all .15s ease;
+}
+label:hover {
+  color: #ff7b29;
+}
+input:checked label {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: #9799a7;
+}
+nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .15s ease;
+}
+input:checked ~ nav {
+  max-height: 500px;
+}
+ul {
+  list-style: none;
+  margin: 8px 0 0 0;
+  padding: 0;
+  width: 100px;
+}
+li {
+  border-bottom: 1px solid #cecfd5;
+}
+li:last-child {
+  border-bottom: 0;
+}
+a {
+  color: #0087cc;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff7b29;
+}*/
 
 /*NAVBAR cool ends*/
 
-/*.menu {
-	height: 50px;
-	width: auto;
-	background-color: none;
-	opacity: .1;
-}*/
 
 button {
 	background: transparent;
@@ -96,131 +149,7 @@ button {
 	filter: grayscale(80%);
 }
 
-.appear p {
-    color: black;
-        width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: none;
-    opacity: 0;
-    z-index: 0;
-    -webkit-backface-visibility: hidden;
-        white-space:nowrap;
-    overflow:hidden;
-    -webkit-animation: type 5s steps(50, end)  6s  ;
-    animation: type 5s steps(50, end)  6s ;
-    /*-webkit-animation: imageAnimation 36s linear infinite 0s;
-    -moz-animation: imageAnimation 36s linear infinite 0s;
-    -o-animation: imageAnimation 36s linear infinite 0s;
-    -ms-animation: imageAnimation 36s linear infinite 0s;
-    animation: imageAnimation 36s linear infinite 0s;*/
-}
-.typing.appear p{
-	font-family: 'Tangerine', cursive;
-	font-size: 60px;
-   /* padding: 0 30px;*/
-   	padding: 20%;
-    line-height: 120px;
-    /*color: rgba(255,255,255,0.8);*/
-    color: black;
 
-     /*z-index: 1000;*/
-     /*display: none;*/
-     position: relative;
-	-webkit-backface-visibility: hidden;
-/*    -webkit-animation: titleAnimation 36s linear infinite 0s;
-    -moz-animation: titleAnimation 36s linear infinite 0s;
-    -o-animation: titleAnimation 36s linear infinite 0s;
-    -ms-animation: titleAnimation 36s linear infinite 0s;
-    animation: titleAnimation 36s linear infinite 0s;*/
-
-    /*NOW*/
-    -webkit-animation: type 36s linear infinite 3s 100% forwards;
-    -moz-animation: type 36s linear infinite 3s 100% forwards;
-    -o-animation: type 36s linear infinite 3s 100% forwards;
-    -ms-animation: type 36s linear infinite 3s 100% forwards;
-    animation: type 36s linear infinite 3s 100% forwards;  /*100% forward worked!*/
-/*  -webkit-animation: type 36s linear 1  100% forwards;
-    -moz-animation: type 36s linear 1  100% forwards;
-    -o-animation: type 36s linear 1  100% forwards;
-    -ms-animation: type 36s linear 1 100% forwards;
-    animation: type 36s linear 1  100% forwards; */
-}
-/*.typing.appear {
-    -webkit-animation-delay: 18s;
-    -moz-animation-delay: 18s;
-    -o-animation-delay: 18s;
-    -ms-animation-delay: 18s;
-    animation-delay: 18s;
-}*/
-
-.typing
-{
-    width: 120em;
-    white-space:nowrap;
-    overflow:hidden;
-    -webkit-animation: type 5s steps(50, end)  6s  ;
-    animation: type 5s steps(50, end)  6s ;
-}
-
-/*@keyframes type{
-    from { width: 0; }
-
-}*/
-@-webkit-keyframes type{
-  0%{width: 0;}
-  50%
-  {width: 0; 
-   }
-  100%{ width: 100; } 
-} 
-@keyframes type{
-  0%{width: 0;}
-  50%{width: 0;
-  }
-  100%{ width: 100; } 
-} 
-.typing.appear {
-	/*animation: titleAnimation 36s linear infinite 18s;*/
-	/*animation: appear-up 2s linear 18s forwards;*/
-	/*animation: appear-up 10s linear 18s forwards;*/
-	/*animation-delay: 12s;*/
-/*	position: fixed;  WORKED!!!
-	z-index:99999;*/
-
-}
-/*
-@-webkit-keyframes type{
-    from { width: 0; }
-}*/
-/*@keyframes appear-up{
-/*0%{ 
-	opacity:0;
-	margin-top:20px;*/
-/*	0% {
-	    opacity: 0;
-	    transform: translateY(-300%);
-	}
-	8% {
-	    opacity: 0;
-	    transform: translateY(0%);
-	}
-	17% {
-	    opacity: 0;
-	    transform: translateY(0%);
-	}
-	19% {
-	    opacity: 1;
-	    transform: translateY(100%);
-
-	}
-	25% { opacity: 1 }
-	100% { opacity: 1 }
-}*/
 .cb-slideshow
 .cb-slideshow:after {
     position: fixed;
@@ -258,7 +187,10 @@ button {
     -ms-animation: imageAnimation 36s linear infinite 0s;
     animation: imageAnimation 36s linear infinite 0s;
 }
-.cb-slideshow li div {
+
+/*all #welcome was named div before */
+
+.cb-slideshow li #welcome {
 	/*background-color: linear-gradient(180, #3d4a69, #3d4a69, #3d4a69); the pretty blue tint*/
     z-index: 1000;
     position: absolute;
@@ -267,65 +199,21 @@ button {
     width: 100%;
     text-align: center;
     opacity: 0;
-/*    -webkit-animation: titleAnimation 36s linear infinite 0s;
-    -moz-animation: titleAnimation 36s linear infinite 0s;
-    -o-animation: titleAnimation 36s linear infinite 0s;
-    -ms-animation: titleAnimation 36s linear infinite 0s;
-    animation: titleAnimation 36s linear infinite 0s;*/
     -webkit-animation: titleAnimation 36s linear 1 0s;
     -moz-animation: titleAnimation 36s linear 1 0s;
     -o-animation: titleAnimation 36s linear 1 0s;
     -ms-animation: titleAnimation 36s linear 1 0s;
     animation: titleAnimation 36s linear 1 0s; /*1 is animation-iteration-count*/
 }
-.cb-slideshow li div h3 {
-    /*font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;*/
+.cb-slideshow li #welcome h3 {
     font-family: 'Great Vibes', cursive;
-    /*filter: none;*/
     font-size: 160px;
-    /*padding: 0 30px;*/
     padding-top: 5%;
     line-height: 120px;
-    /*color: rgba(255,255,255,0.8);*/
     color: white;
 
 }
 
-
-.cb-slideshow  div p {
-	font-family: 'Tangerine', cursive;
-	font-size: 60px;
-   /* padding: 0 30px;*/
-   	padding: 20%;
-    line-height: 120px;
-    /*color: rgba(255,255,255,0.8);*/
-    color: white;
-
-/*     -webkit-animation: paraAnimation 36s linear infinite 6s;
-    -moz-animation: paraAnimation 36s linear infinite 6s;
-    -o-animation: paraAnimation 36s linear infinite 6s;
-    -ms-animation: paraAnimation 36s linear infinite 6s;
-    animation: paraAnimation 36s linear infinite 6s;*/
-}
-
-/*  Typing effect starts*/
-/*.typing
-{
-    width: 30em;
-    white-space:nowrap;
-    overflow:hidden;
-    -webkit-animation: type 5s steps(50, end);
-    animation: type 5s steps(50, end);
-}
-
-@keyframes type{
-    from { width: 0; }
-}
-
-@-webkit-keyframes type{
-    from { width: 0; }
-}*/
-/*  Typing effect ends*/
 
 
 .cb-slideshow li:nth-child(1) span { background-image: url('/content/img/homey.jpg') }
@@ -369,7 +257,9 @@ button {
     -ms-animation-delay: 30s;
     animation-delay: 30s;
 }
-.cb-slideshow li:nth-child(2) div {
+
+/*it's NOT for welcome*/
+/*.cb-slideshow li:nth-child(2) div {
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;
@@ -377,78 +267,62 @@ button {
     animation-delay: 6s;
 
 
-}
-/*.cb-slideshow li p {
-     -webkit-animation: 6s 100% forwards;
-     animation: 6s 100% forwards;
- }*/
-/*
-.cb-slideshow li:nth-child(2) .typing{
-
-    -webkit-animation-fill-mode: forwards;
-     animation-fill-mode: forwards;
 }*/
 
+/*experiment may 13 */
+/*.cb-slideshow */
+/*.quote{
+
+    width: 100% ;
+    margin: 5%;
+    margin: 0%;
+    padding: 0%;
 
 
-/*.cb-slideshow li:nth-child(3) div {
-    -webkit-animation-delay: 12s;
-    -moz-animation-delay: 12s;
-    -o-animation-delay: 12s;
-    -ms-animation-delay: 12s;
-    animation-delay: 12s;
 }*/
-/*.cb-slideshow li:nth-child(4) div {
-    -webkit-animation-delay: 18s;
-    -moz-animation-delay: 18s;
-    -o-animation-delay: 18s;
-    -ms-animation-delay: 18s;
-    animation-delay: 18s;
+.quote p {
+    font-family: 'Tangerine', cursive;
+    font-size: 60px;
+    margin: 5% 30% 5% 30%; /*for width transition
+    /*margin: 5% 30% 0 0%;*/
+    padding: 0%;
+    line-height: 50px;
+    color: white;
+    /*position: fixed;*/
+    opacity: 0; /*this stopped the line from showing at the start*/
+    white-space: nowrap;
+    overflow: hidden;
+/*    background-color: red;*/
+    -webkit-animation: typing 20s linear 6s forwards;
+       -moz-animation: typing 20s linear 6s forwards;    
+        -ms-animation: typing 20s linear 6s forwards;
+         -o-animation: typing 20s linear 6s forwards;
+            animation: typing 20s linear 6s forwards ;
 }
-.cb-slideshow li:nth-child(5) div {
-    -webkit-animation-delay: 24s;
-    -moz-animation-delay: 24s;
-    -o-animation-delay: 24s;
-    -ms-animation-delay: 24s;
-    animation-delay: 24s;
+
+
+
+@keyframes typing {
+ from {
+    opacity: 1;
+    width: 0;
+    }
+    to {
+    opacity: 1;
+    width: 40%; /*keeps the para aligned in middle*/
+
 }
-.cb-slideshow li:nth-child(6) div {
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s;
-}*/
+
+}
+
+
+/*experiment may 13 ends */
+
+
+
 
 /*real ones*/
-/*.cb-slideshow li:nth-child(3) div {
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s;
-}
-.cb-slideshow li:nth-child(4) div {
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s;
-}
-.cb-slideshow li:nth-child(5) div {
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s;
-}
-.cb-slideshow li:nth-child(6) div {
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s;
-}*/
+
 @-webkit-keyframes imageAnimation { 
 	0% {
 	    opacity: 0;
@@ -456,16 +330,11 @@ button {
 	}
 	8% {
 		opacity: 1;
-		/*-webkit-linear-gradient: $angle, $color-stop1, $color-stop2, $color-stop3;*/
-		/*-webkit-linear-gradient: 180, #3d4a69, #3d4a69, #3d4a69;*/
-	    /*opacity: .3;*/
 	    -webkit-transform: scale(1.05);
 	    -webkit-animation-timing-function: ease-out;
 	}
 	17% {
 		opacity: 1;
-	    /*opacity: .3;*/
-	    /*-webkit-linear-gradient: 180, #3d4a69, #3d4a69, #3d4a69;*/
 	    -webkit-transform: scale(1.1);
 	}
 	22% {
@@ -485,13 +354,11 @@ button {
 	}
 	8% {
 		opacity: 1;
-	    /*opacity: .3;*/
 	    -moz-transform: scale(1.05);
 	    -moz-animation-timing-function: ease-out;
 	}
 	17% {
 		opacity: 1;
-	    /*opacity: .3;*/
 	    -moz-transform: scale(1.1);
 	}
 	22% {
@@ -511,13 +378,11 @@ button {
 	}
 	8% {
 		opacity: 1;
-	    /*opacity: .3;*/
 	    -o-transform: scale(1.05);
 	    -o-animation-timing-function: ease-out;
 	}
 	17% {
 		opacity: 1;
-	    /*opacity: .3;*/
 	    -o-transform: scale(1.1);
 	}
 	22% {
@@ -537,13 +402,11 @@ button {
 	}
 	8% {
 		opacity: 1;
-	    /*opacity: .3;*/
 	    -ms-transform: scale(1.05);
 	    -ms-animation-timing-function: ease-out;
 	}
 	17% {
 		opacity: 1;
-	    /*opacity: .3;*/
 	    -ms-transform: scale(1.1);
 	}
 	22% {
@@ -563,13 +426,11 @@ button {
 	}
 	8% {
 		opacity: 1;
-	    /*opacity: .3;*/
 	    transform: scale(1.05);
 	    animation-timing-function: ease-out;
 	}
 	17% {
 		opacity: 1;
-	    /*opacity: .3;*/
 	    transform: scale(1.1);
 	}
 	22% {
@@ -794,16 +655,7 @@ button {
 }
 
 						/*Demo 2 ends*/
-.container-fluid.home {
-	height: 100vh;
-	padding: 5%;
-	color: black;
-/*	    	background: 
-			url('/content/img/homey.jpg') center center no-repeat fixed; */  
-/*		background-size: cover;*/
-	background-size: 100% 100%;
-	text-align: center;
-}
+
 
 
 .container-fluid.about {
