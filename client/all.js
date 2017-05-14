@@ -55,6 +55,23 @@
     // 			}
 
 			})
+			.state('solitude',{  
+				// url: '/album',
+				url:'/solitude',
+				templateUrl: '/partials/solitude.html',
+
+				// templateUrl: 'partials.album.html',
+				controller: 'albumCtrl',
+				controllerAs: 'vm',
+				// onEnter: function ($location, $stateParams, $anchorScroll, $timeout) {
+    // 				$timeout(function() { 
+    //   				$location.hash($stateParams.scrollTo);
+    //   				$anchorScroll()
+    //   				console.log("hukiiii");
+    // 				}, 100)
+    // 			}
+
+			})
 
 
 			.state('albums',{
