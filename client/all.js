@@ -30,11 +30,56 @@
 			.state('florence',{  
 				url:'/florence',
 				templateUrl: '/partials/florence.html',
-				// templateUrl: 'partials.album.html',
-				controller: 'florenceCtrl',
+				controller: 'albumCtrl',
 				controllerAs: 'vm',
 
 			})
+			.state('rome',{  
+				url:'/rome',
+				templateUrl: '/partials/rome.html',
+				controller: 'albumCtrl',
+				controllerAs: 'vm',
+
+			})
+			.state('venice',{  
+				url:'/venice',
+				templateUrl: '/partials/venice.html',
+				controller: 'albumCtrl',
+				controllerAs: 'vm',
+
+			})
+			.state('barcelona',{  
+				url:'/barcelona',
+				templateUrl: '/partials/barcelona.html',
+				controller: 'albumCtrl',
+				controllerAs: 'vm',
+
+			})
+			.state('cordoba',{  
+				url:'/cordoba',
+				templateUrl: '/partials/cordoba.html',
+				controller: 'albumCtrl',
+				controllerAs: 'vm',
+
+			})
+			.state('granada',{  
+				url:'/granada',
+				templateUrl: '/partials/granada.html',
+				controller: 'albumCtrl',
+				controllerAs: 'vm',
+
+			})
+			// .state('barcelona',{  
+			// 	url:'/barcelona',
+			// 	templateUrl: '/partials/barcelona.html',
+			// 	controller: 'albumCtrl',
+			// 	controllerAs: 'vm',
+
+			// })
+
+
+
+
 			.state('solitude',{  
 				// url: '/album',
 				url:'/solitude',

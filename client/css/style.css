@@ -677,11 +677,12 @@ figure.effect-sadie:hover p {
 
 /*Poem page ends*/
 /*Album Partial*/
-.album {
+.container-fluid.album {
   height: 100%;
   width: 100%;
   padding: 4%;
-  background-color: #3d4a69; }
+  background-color: #3d4a69;
+  text-align: center; }
 
 /*slider with text*/
 /* fade slider */
@@ -809,6 +810,7 @@ figure.effect-sadie:hover p {
   padding: 20px;
   position: absolute;
   top: 70%;
+  text-align: left;
   /*width:600px;*/
   width: 80%;
   /* css3 animation */
@@ -917,7 +919,8 @@ figure.effect-sadie:hover p {
   margin-top: 20px;
   position: relative;
   left: 100%;
-  font-size: 13px;
+  font-size: 20px;
+  line-height: 25px;
   -webkit-transition: all .9s ease;
   -moz-transition: all .9s ease;
   -o-transition: all .9s ease;
