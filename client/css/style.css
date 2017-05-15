@@ -156,7 +156,7 @@ button {
   color: white; }
 
 .cb-slideshow li:nth-child(1) span {
-  background-image: url("/content/img/florence/florence.jpg"); }
+  background-image: url("/content/img/cvr/cvrflorence.jpg"); }
 
 .cb-slideshow li:nth-child(2) span {
   background-image: url("/content/img/homey.jpg");
@@ -487,11 +487,12 @@ button {
   position: relative;
   float: left;
   overflow: hidden;
+  height: 360px;
   /*margin: 10px 2.5%;*/
   margin: 2% 2.5%;
   min-width: 320px;
   max-width: 480px;
-  max-height: 360px;
+  /*	max-height: 360px;*/
   width: 48%;
   background: #3085a3;
   text-align: center;
@@ -508,7 +509,8 @@ button {
   display: block;
   min-height: 100%;
   max-width: 100%;
-  opacity: 0.8; }
+  opacity: 0.8;
+  overflow: hidden; }
 
 .grid figure figcaption {
   padding: 2em;
@@ -686,7 +688,7 @@ figure.effect-sadie:hover p {
 .slides {
   /*height:300px;*/
   /*border: solid 4px white;*/
-  height: 40vh;
+  height: 50vh;
   margin: 50px auto;
   overflow: hidden;
   position: relative;
@@ -698,7 +700,7 @@ figure.effect-sadie:hover p {
 
 .slides img {
   /*height:300px;*/
-  height: 40vh;
+  height: 50vh;
   width: 100%; }
 
 /* keyframes #anim_slides */

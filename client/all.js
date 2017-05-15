@@ -25,34 +25,14 @@
     // 				}, 100)
     // 			}
 			})
-			// .state('about',{  
-			// 	controller: 'aboutCtrl',
-			// 	controllerAs: 'vm',
-			// 	onEnter: function ($location, $stateParams, $anchorScroll, $timeout) {
-   //  				$timeout(function() { 
-   //    				$location.hash($stateParams.scrollTo);
-   //    				$anchorScroll()
-   //    				console.log("hukiiii");
-   //  				}, 100)
-   //  			}
 
-			// })
 // Albums is in main page, album is in partials
-			.state('album',{  
-				// url: '/album',
-				url:'/album',
-				templateUrl: '/partials/album.html',
-
+			.state('florence',{  
+				url:'/florence',
+				templateUrl: '/partials/florence.html',
 				// templateUrl: 'partials.album.html',
-				controller: 'albumCtrl',
+				controller: 'florenceCtrl',
 				controllerAs: 'vm',
-				// onEnter: function ($location, $stateParams, $anchorScroll, $timeout) {
-    // 				$timeout(function() { 
-    //   				$location.hash($stateParams.scrollTo);
-    //   				$anchorScroll()
-    //   				console.log("hukiiii");
-    // 				}, 100)
-    // 			}
 
 			})
 			.state('solitude',{  
