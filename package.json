@@ -1,8 +1,8 @@
 {
-  "name": "Portfolio_webdev",
+  "name": "travel_stories",
   "version": "1.0.0",
-  "description": "My portfolio",
-  "main": "index.js",
+  "description": "Travel stories of Salman Kabir",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
