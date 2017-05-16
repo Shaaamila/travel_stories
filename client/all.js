@@ -69,13 +69,48 @@
 				controllerAs: 'vm',
 
 			})
-			// .state('barcelona',{  
-			// 	url:'/barcelona',
-			// 	templateUrl: '/partials/barcelona.html',
-			// 	controller: 'albumCtrl',
-			// 	controllerAs: 'vm',
+			.state('istanbul',{  
+				url:'/istanbul',
+				templateUrl: '/partials/istanbul.html',
+				controller: 'albumCtrl',
+				controllerAs: 'vm',
 
-			// })
+			})
+			.state('paris',{  
+				url:'/paris',
+				templateUrl: '/partials/paris.html',
+				controller: 'albumCtrl',
+				controllerAs: 'vm',
+
+			})
+			.state('vancouver',{  
+				url:'/vancouver',
+				templateUrl: '/partials/vancouver.html',
+				controller: 'albumCtrl',
+				controllerAs: 'vm',
+
+			})
+			.state('bled',{  
+				url:'/bled',
+				templateUrl: '/partials/bled.html',
+				controller: 'albumCtrl',
+				controllerAs: 'vm',
+
+			})
+			.state('ljubljana',{  
+				url:'/ljubljana',
+				templateUrl: '/partials/ljubljana.html',
+				controller: 'albumCtrl',
+				controllerAs: 'vm',
+
+			})
+			.state('budapest',{  
+				url:'/budapest',
+				templateUrl: '/partials/budapest.html',
+				controller: 'albumCtrl',
+				controllerAs: 'vm',
+
+			})
 
 
 
