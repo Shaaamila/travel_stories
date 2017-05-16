@@ -18,12 +18,6 @@
 				url: '/',
 				controller: 'homeCtrl',
 				controllerAs: 'vm',
-				// onEnter: function ($location, $stateParams, $anchorScroll, $timeout) {
-    // 				$timeout(function() { 
-    //   				$location.hash($stateParams.scrollTo);
-    //   				$anchorScroll()
-    // 				}, 100)
-    // 			}
 			})
 
 // Albums is in main page, album is in partials
@@ -116,20 +110,10 @@
 
 
 			.state('solitude',{  
-				// url: '/album',
 				url:'/solitude',
 				templateUrl: '/partials/solitude.html',
-
-				// templateUrl: 'partials.album.html',
 				controller: 'albumCtrl',
 				controllerAs: 'vm',
-				// onEnter: function ($location, $stateParams, $anchorScroll, $timeout) {
-    // 				$timeout(function() { 
-    //   				$location.hash($stateParams.scrollTo);
-    //   				$anchorScroll()
-    //   				console.log("hukiiii");
-    // 				}, 100)
-    // 			}
 
 			})
 
@@ -143,31 +127,8 @@
       				$anchorScroll()
     				}, 100)
     			}
-			})
-			.state('skills',{
-				// url: '/skills',
-				// templateUrl: 'partials/skills.html',
-				controller: 'skillsCtrl',
-				controllerAs: 'vm',
-				onEnter: function ($location, $stateParams, $anchorScroll, $timeout) {
-    				$timeout(function() { 
-      				$location.hash($stateParams.scrollTo);
-      				$anchorScroll()
-    				}, 100)
-    			}
-			})
-			.state('contact',{
-				// url: '/contact',
-				// templateUrl: 'partials/contact.html',
-				controller: 'contactCtrl',
-				controllerAs: 'vm',
-				onEnter: function ($location, $stateParams, $anchorScroll, $timeout) {
-    				$timeout(function() { 
-      				$location.hash($stateParams.scrollTo);
-      				$anchorScroll()
-    				}, 100)
-    			}
 			});
+
 		$compileProvider.debugInfoEnabled(false);
 	}
 
